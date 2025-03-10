@@ -4,33 +4,22 @@ using namespace std;
 double alas, tinggi;
 
 void procedurInput(){
-    cout << "Masukkan Nilai alas : ";
+    cout << "Masukan Nilai alas : ";
     cin >> alas;
 
-    cout << "Masukkan Nilai tinggi";
+    cout << "Masukan Nilai tinggi : ";
     cin >> tinggi;
 }
 
-double hitungLuas(double a, double t){
+double hitungLuas(){
     return 0.5 * alas * tinggi;
 }
 
-string ukuranSegitiga(double l){
-    //Jika luas > 60
-    if(1 > 60){
-        return "Besar";
-    }
-    else{
-        return "Kecil";
-    }
-}
-
-void procedurOutput2(){
-    cout << "Luas Segitiga = " << ukuranSegitiga(hitungLuas2(alas, tinggi)) << endl;
+void procedurOutput(){
+    cout << "Luas Segitiga = " << hitungLuas << endl;
 }
 
 int main(){
     procedurInput();
     procedurOutput();
-    procedurOutput2();
 }
